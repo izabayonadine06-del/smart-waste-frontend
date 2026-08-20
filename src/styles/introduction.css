@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+.intro-page {
+  min-height: 100vh;
+  background: #f5f9f6;
+  color: #18352a;
+}
+
+/* Navbar */
+
+.intro-navbar {
+  height: 75px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #e8eee9;
+}
+
+.intro-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.intro-logo > span {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #11804a;
+  color: white;
+  font-size: 23px;
+}
+
+.intro-logo strong {
+  display: block;
+  font-size: 16px;
+  color: #11804a;
+}
+
+.intro-logo small {
+  display: block;
+  color: #718078;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.intro-nav-links {
+  display: flex;
+  gap: 12px;
+}
+
+.intro-nav-links button {
+  border: none;
+  background: transparent;
+  padding: 10px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #18352a;
+}
+
+.intro-nav-links .register-btn {
+  background: #11804a;
+  color: white;
+}
+
+/* Hero */
+
+.intro-hero {
+  min-height: 600px;
+  padding: 70px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.intro-content {
+  max-width: 620px;
+}
+
+.intro-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #e3f4ea;
+  color: #11804a;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.intro-content h1 {
+  font-size: 60px;
+  line-height: 1.05;
+  margin: 0 0 25px;
+  color: #18352a;
+}
+
+.intro-content h1 span {
+  color: #11804a;
+}
+
+.intro-content p {
+  max-width: 560px;
+  color: #64736b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.intro-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.intro-primary-btn,
+.intro-secondary-btn {
+  padding: 13px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.intro-primary-btn {
+  border: none;
+  background: #11804a;
+  color: white;
+}
+
+.intro-secondary-btn {
+  background: white;
+  color: #11804a;
+  border: 1px solid #11804a;
+}
+
+/* Illustration */
+
+.intro-illustration {
+  min-height: 430px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #dff2e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 130px;
+  color: #11804a;
+}
+
+.intro-card {
+  position: absolute;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.card-one {
+  top: 40px;
+  left: 10px;
+}
+
+.card-two {
+  right: 0;
+  top: 150px;
+}
+
+.card-three {
+  bottom: 45px;
+  left: 70px;
+}
+
+/* About */
+
+.intro-about {
+  padding: 80px 8%;
+  background: white;
+  text-align: center;
+}
+
+.intro-about h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.intro-about > p {
+  max-width: 600px;
+  margin: auto;
+  color: #718078;
+  line-height: 1.6;
+}
+
+.intro-features {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  padding: 30px 25px;
+  border: 1px solid #e7eee9;
+  border-radius: 12px;
+  background: #fbfdfc;
+}
+
+.feature-card > div {
+  font-size: 38px;
+}
+
+.feature-card h3 {
+  margin: 15px 0 8px;
+}
+
+.feature-card p {
+  color: #718078;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Footer */
+
+.intro-footer {
+  background: #123526;
+  color: white;
+  padding: 35px 8%;
+  text-align: center;
+}
+
+.intro-footer p {
+  color: #b8c9c0;
+  font-size: 13px;
+}
+
+.intro-footer small {
+  color: #8da39a;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+  .intro-navbar {
+    padding: 0 20px;
+  }
+
+  .intro-hero {
+    grid-template-columns: 1fr;
+    padding: 50px 25px;
+    text-align: center;
+  }
+
+  .intro-content p {
+    margin: auto;
+  }
+
+  .intro-buttons {
+    justify-content: center;
+  }
+
+  .intro-content h1 {
+    font-size: 45px;
+  }
+
+  .intro-features {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-illustration {
+    min-height: 350px;
+  }
+
+  .intro-circle {
+    width: 240px;
+    height: 240px;
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .intro-logo small {
+    display: none;
+  }
+
+  .intro-nav-links button {
+    padding: 8px 10px;
+  }
+
+  .intro-content h1 {
+    font-size: 38px;
+  }
+
+  .intro-card {
+    font-size: 11px;
+    padding: 10px;
+  }
+}

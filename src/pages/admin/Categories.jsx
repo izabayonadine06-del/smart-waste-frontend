@@ -1,0 +1,3 @@
+import '../../styles/dashboard.css';
+const categories=[['Plastic','♻','Recyclable'],['Organic','🌿','Compostable'],['Paper','📄','Recyclable'],['Glass','◯','Recyclable'],['E-waste','⚡','Special handling'],['Construction','▦','General']];
+export default function Categories(){return <div className="page-content"><div className="dashboard-header"><div><h1>Waste Categories</h1><p>Manage the waste types available to citizens and drivers.</p></div><button className="btn btn-primary">＋ Add Category</button></div><div className="card-grid">{categories.map(c=><div className="info-card" key={c[0]}><div style={{fontSize:28}}>{c[1]}</div><h3>{c[0]}</h3><p>{c[2]}</p><button className="btn btn-soft">Edit</button></div>)}</div></div>}
